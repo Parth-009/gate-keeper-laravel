@@ -20,7 +20,8 @@ class CreateComplaintsTable extends Migration
             $table->string('type');
             $table->string('complaints');
             $table->string('status')->default('Submitted');
-            $table->timestamps();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
         });
     }
 

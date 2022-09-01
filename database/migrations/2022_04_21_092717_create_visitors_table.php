@@ -19,7 +19,8 @@ class CreateVisitorsTable extends Migration
             $table->string('mobile');
             $table->string('flat_no');
             $table->string('purpose');
-            $table->timestamps();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
         });
     }
 

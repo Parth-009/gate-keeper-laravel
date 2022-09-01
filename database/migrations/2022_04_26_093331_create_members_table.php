@@ -19,7 +19,8 @@ class CreateMembersTable extends Migration
             $table->string('mobile');
             $table->string('email')->unique();
             $table->string('house_no');
-            $table->timestamps();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
         });
     }
 

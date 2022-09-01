@@ -19,7 +19,8 @@ class CreateAttendencesTable extends Migration
             $table->foreign('staff_id')->references('id')->on('staffs')->onDelete('cascade')->onUpdate('cascade');
             $table->date('date');
             $table->string('status');
-            $table->timestamps();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
         });
     }
 

@@ -19,7 +19,8 @@ class CreateStaffsTable extends Migration
             $table->string('mobile');
             $table->integer('staff_no');
             $table->string('category');
-            $table->timestamps();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
         });
     }
 

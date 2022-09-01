@@ -88,7 +88,7 @@
   </a>
 </div>
     <footer class="py-2 bg-dark">
-        <div class="container px-4"><p class="m-0 text-center text-white" id="date">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Parth Darji All Rights Reserved</p></div>
+        <div class="container px-4"><p class="m-0 text-center text-white" id="date">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Gate Keeper All Rights Reserved</p></div>
     </footer>
         
     </body>

@@ -19,7 +19,7 @@ class CreateComplaintsTable extends Migration
             $table->string('mobile');
             $table->string('type');
             $table->string('complaints');
-            $table->string('status');
+            $table->string('status')->default('Submitted');
             $table->timestamps();
         });
     }

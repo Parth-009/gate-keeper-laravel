@@ -68,6 +68,7 @@ class RegisterController extends Controller
     {
         $email= Member::where('email','=',$data['email'])->first();
         //dd($email->email);
+        // dd( Hash::make($data['password'])); 
             if($email->email=== $data['email']){
                 return User::create([
                     'name' => $data['name'],

@@ -50,7 +50,7 @@
         ],
          "post-install-cmd": [
             "php artisan clear-compiled",
-            "cacls public /g everyone:f"
+            "chmod 777 -R public/"
         ]
     },
     "extra": {

@@ -48,9 +48,15 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ],
+<<<<<<< HEAD
         "post-install-cmd": [
             "php artisan clear-compiled",
             "cacls public /g everyone:f"
+=======
+         "post-install-cmd": [
+            "php artisan clear-compiled",
+            "chmod 777 -R public/"
+>>>>>>> 17959f72ef75a83645aa7f189eb8c7d8a24b290c
         ]
     },
     "extra": {
